@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>КУРС</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/home-page.css" rel="stylesheet">
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+</head>
+<body onload="GetMap();">
+
+<header class="header">
+    <div class="wrapper">
+        <a href="#" class="logo float-l"></a>
+        <div class="header-text-left float-l">
+            Тест SGC
+        </div>
+        <!-- Menu Header -->
+        <div class="header-menu float-l">
+            <ul>
+                <li>
+                    <a href="#">Задачи</a>
+                </li>
+                <li>
+                    <a href="#">Персонал</a>
+                </li>
+                <li>
+                    <a href="#">Объекты</a>
+                </li>
+                <li>
+                    <a href="#">Отчёты</a>
+                </li>
+                <li>
+                    <a href="#">Управление</a>
+                </li>
+                <li>
+                    <a href="#">Помощь</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Container Notification -->
+        <div class="container-notification float-r btn-header-menu" data-icon-menu="notification">
+            <div class="block-icon-menu">
+        
+            </div>
+        </div>
+
+        <!-- Container Message -->
+        <div class="container-message float-r btn-header-menu" data-icon-menu="message">
+            <div class="block-icon-menu">
+        
+            </div>
+        </div>
+
+        <!-- Container Search -->
+        <div class="container-search float-r btn-header-menu" data-icon-menu="search">
+            <div class="block-icon-menu">
+        
+            </div>
+        </div>
+
+        <!-- Container Avatar Name -->
+        <div class="container-avatar-name float-r">
+            <div class="block-hover-lk">
+                <div class="container-avatar">
+                    <img src="#" alt="">
+                </div>
+                <div class="container-name">
+                    Константин Евстегнеев-Анто…
+                </div>
+            </div>
+            <div class="container-list-link">
+                <a class="container-list-link_link" href="#">Профиль</a>
+                <a class="container-list-link_link" href="#">Выйти</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<div class="container-menu-popup">
+    <!-- Notification -->
+    <div class="menu-popup" data-menu-popup="notification">
+        <div class="menu-popup-header">
+            <div class="menu-popup-header_menu">
+                <ul>
+                    <li class="menu-popup-header_menu-list">
+                        <a href="#" class="active">Все</a>
+                    </li>
+                    <li class="menu-popup-header_menu-list">
+                        <a href="#">Задачи</a>
+                    </li>
+                    <li class="menu-popup-header_menu-list">
+                        <a href="#">Оповещения</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu-popup-content">
+            <div class="menu-popup-content_list gray-back">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            12:40
+                        </div>
+                        <div class="menu-popup-time">
+                            25.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_notification">
+                                <strong>Наблюдатель Олег Орлов</strong>  отправил сигнал SOS
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+
+            <div class="menu-popup-content_list">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            12:23
+                        </div>
+                        <div class="menu-popup-time">
+                            24.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_notification">
+                                <strong>Бригада ремонтников 5 завершила</strong> задание <strong>«Обустройство стройплощадки»</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+
+            <div class="menu-popup-content_list">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            12:22
+                        </div>
+                        <div class="menu-popup-time">
+                            24.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_notification">
+                                <strong>Стажёр Анна Акентьева</strong> покинула геозону задания
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+
+            <div class="menu-popup-content_list">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            11:45
+                        </div>
+                        <div class="menu-popup-time">
+                            24.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_notification">
+                                <strong>Бригада ремонтников 5</strong> завершила задание <strong>«Обход территории»</strong> с опозданием
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+
+            <div class="menu-popup-content_list">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            11:35
+                        </div>
+                        <div class="menu-popup-time">
+                            24.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_notification">
+                                Задание <strong>«Ремонт опор ретрансляторов в г. Брянск»</strong> возвращено в работу
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Message -->
+    <div class="menu-popup" data-menu-popup="message">
+        <div class="menu-popup-header">
+            <div class="menu-popup-header_menu">
+                <div class="menu-popup-header_menu-txt">
+                    Сообщения
+                </div>
+            </div>
+        </div>
+        <div class="menu-popup-content">
+            <div class="menu-popup-content_list gray-back">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            12:40
+                        </div>
+                        <div class="menu-popup-time">
+                            25.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_message">
+                                <div class="menu-popup_content-txt_message-title">
+                                    5 новых сообщений в задании «Обход территории ГЭС г.Клёцк»
+                                </div>
+                                <div class="menu-popup_content-txt_message-executor">
+                                    Исполнитель Марина Власова
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+
+            <div class="menu-popup-content_list gray-back">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            12:23
+                        </div>
+                        <div class="menu-popup-time">
+                            24.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_message">
+                                <div class="menu-popup_content-txt_message-title">
+                                    5 новых сообщений в задании «Обход территории ГЭС г.Клёцк»
+                                </div>
+                                <div class="menu-popup_content-txt_message-executor">
+                                    Исполнитель Марина Власова
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+
+            <div class="menu-popup-content_list">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            12:22
+                        </div>
+                        <div class="menu-popup-time">
+                            24.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_message">
+                                <div class="menu-popup_content-txt_message-title">
+                                    5 новых сообщений в задании «Обход территории ГЭС г.Клёцк»
+                                </div>
+                                <div class="menu-popup_content-txt_message-executor">
+                                    Исполнитель Марина Власова
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+
+            <div class="menu-popup-content_list">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            11:45
+                        </div>
+                        <div class="menu-popup-time">
+                            24.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_message">
+                                <div class="menu-popup_content-txt_message-title">
+                                    5 новых сообщений в задании «Обход территории ГЭС г.Клёцк»
+                                </div>
+                                <div class="menu-popup_content-txt_message-executor">
+                                    Исполнитель Марина Власова
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+
+            <div class="menu-popup-content_list">
+                <div class="menu-popup-content-txt">
+                    <div class="menu-popup_data-time">
+                        <div class="menu-popup-data">
+                            11:35
+                        </div>
+                        <div class="menu-popup-time">
+                            24.05.17
+                        </div>
+                    </div>
+                    <div class="menu-popup_content">
+                        <div class="menu-popup_content-txt">
+                            <div class="menu-popup_content-txt_message">
+                                <div class="menu-popup_content-txt_message-title">
+                                    5 новых сообщений в задании «Обход территории ГЭС г.Клёцк»
+                                </div>
+                                <div class="menu-popup_content-txt_message-executor">
+                                    Исполнитель Марина Власова
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-popup-content-icon">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search -->
+    <div class="menu-popup" data-menu-popup="search">
+        <div class="menu-popup-header">
+            <div class="menu-popup-header_menu">
+                <form class="menu-popup-header_menu-input">
+                    <input type="text" class="input-search-popup">
+                </form>
+            </div>
+        </div>
+        <div class="menu-popup-content">
+            <div class="container-search-popup">
+                <div class="container-search-title">
+                    Персонал
+                </div>
+                <a href="#" class="block-search-popup">
+                    <div class="block-search-popup_name">
+                        <span>Анд</span>рей Аксёнов
+                    </div>
+                    <div class="block-search-popup_position">
+                        машинист, ГЭС, Клёцк
+                    </div>
+                </a>
+                <a href="#" class="block-search-popup">
+                    <div class="block-search-popup_name">
+                        <span>Анд</span>рей Леонов
+                    </div>
+                    <div class="block-search-popup_position">
+                        инженер ТБ, ГЭС, Иваново
+                    </div>
+                </a>
+                <a href="#" class="block-search-popup">
+                    <div class="block-search-popup_name">
+                        В<span>анд</span>а Миленковская
+                    </div>
+                    <div class="block-search-popup_position">
+                        Зам. начальника по хозяйственной части Брянского ГРНТ
+                    </div>
+                </a>
+                <a href="#" class="block-search-similar">
+                    Ещё 12 результатов
+                </a>
+            </div>
+
+            <div class="container-search-popup">
+                <div class="container-search-title">
+                    Активные задания
+                </div>
+                <a href="#" class="block-search-popup small-pad">
+                    <div class="block-search-popup_name">
+                        Отбор к<span>анд</span>идатов на курсы повышения квалификации среди бригад ремонтников
+                    </div>
+                </a>
+            </div>
+
+            <div class="container-search-popup">
+                <div class="container-search-title">
+                    Объекты
+                </div>
+                <a href="#" class="block-search-popup">
+                    <div class="block-search-popup_no">
+                        Совпадений нет
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section class="main">
+    <div class="wrapper wrapper-home-page">
+        <div class="container-home-page">
+            <div class="container-home-page_tasks">
+                <div class="container-home-page_title">Задачи</div>
+                <a href="#" class="container-home-page_link">Все задачи</a>
+                <table class="table-tasks">
+        
+                    <thead>
+                        <tr>
+                            <th class="task">Задачи</th>
+                            <th class="executor">Исполнитель</th>
+                            <th class="data">Срок</th>
+                            <th class="status">Статус</th>
+                            <th class="icon"></th>
+                        </tr>
+                    </thead>
+        
+                    <tbody>
+                        <tr>
+                            <td class="task">Техническое обслуживание вышек связи в районе села Кукуевка</td>
+                            <td class="executor">Петр Прокофьев</td>
+                            <td class="data">27.05.17 11:00</td>
+                            <td class="status"><span class="orange">Открыта просрочена</span></td>
+                            <td class="icon"></td>
+                        </tr>
+                        <tr>
+                            <td class="task">Офис №2</td>
+                            <td class="executor">Бригада монтёров 8</td>
+                            <td class="data">27.05.17 11:30</td>
+                            <td class="status"><span class="orange">Открыта просрочена</span></td>
+                            <td class="icon"></td>
+                        </tr>
+                        <tr>
+                            <td class="task">Центр отдыха</td>
+                            <td class="executor">Анатолий Васильев и ещё 3</td>
+                            <td class="data">27.05.17 12:30</td>
+                            <td class="status"><span class="black">Открыта</span></td>
+                            <td class="icon"></td>
+                        </tr>
+                        <tr>
+                            <td class="task">Офис №1</td>
+                            <td class="executor">Бригада монтёров 3</td>
+                            <td class="data">27.05.17 08:40</td>
+                            <td class="status"><span class="red">Выполнена не в геозоне</span></td>
+                            <td class="icon"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="container-home-page_events-worker">
+                <div class="container-home-page_events">
+                    <div class="container-home-page_title">События</div>
+                    <a href="#" class="container-home-page_link">Все события</a>
+                    <table class="table-events">
+                        <tr>
+                            <td>
+                                <div class="task">Отредактирована задача</div>
+                                <div class="data">27.05.2017 11:34</div>
+                                <div class="txt">Техническое обслуживание вышек связи в районе села Кукуевка</div>
+                            </td>
+        
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="task">Закрыта задача</div>
+                                <div class="data">27.05.2017 11:34</div>
+                                <div class="txt">Техническое обслуживание вышек связи в районе села Кукуевка ехническое обслуживание вышек связи</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="task">Отредактирована задача</div>
+                                <div class="data">27.05.2017 11:34</div>
+                                <div colspan="2" class="txt">Техническое обслуживание вышек связи в районе села Кукуевка</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="container-home-page_worker">
+                    <div class="container-home-page_title">Свободные работники</div>
+                    <a href="#" class="container-home-page_link">Все свободные работники</a>
+                    <table class="table-worker">
+                        <tr>
+                            <td>
+                                <div class="person">
+                                    <div class="person_name">Агапов Алексей</div>
+                                    <div class="person_position">Наладчик</div>
+                                </div>
+                                <div class="position">Оперативная бригада Западное отделение</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="person">
+                                    <div class="person_name">Нихматченко Валерий Николаевич</div>
+                                    <div class="person_position">Администратор</div>
+                                </div>
+                                <div class="position">Администрация Восточный округ</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="person">
+                                    <div class="person_name">Николай Потешкин</div>
+                                    <div class="person_position">Технолог</div>
+                                </div>
+                                <div class="position">Сервисные инженеры ОХРСВ</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="person">
+                                    <div class="person_name">Анастасия Бровкина</div>
+                                    <div class="person_position">Наладчик</div>
+                                </div>
+                                <div class="position">Сервисные инженеры ОХРСВ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="OSMap" class="map-task">
+            <div class="container-btn-map">
+                <div class="btn-object btnObject active">
+                    Объекты
+                </div>
+                <div class="btn-task btnTask">
+                    Объекты
+                </div>
+                <div class="btn-personal btnPersonal">
+                    Персонал
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="overflow"></div>
+<script src="js/lib/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/map.js"></script>
+</body>
+</html>
