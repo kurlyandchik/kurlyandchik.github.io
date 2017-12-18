@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Status / Medium</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M8.41176471,16 C3.65410687,16 0,12.4885695 0,8 C0,3.51143052 3.65410687,0 8.41176471,0 C12.4914414,0 16,3.6571561 16,8 C16,12.3428439 12.4914414,16 8.41176471,16 Z M8.41176471,14 C11.367886,14 14,11.2564085 14,8 C14,4.74359154 11.367886,2 8.41176471,2 C4.74124751,2 2,4.63421419 2,8 C2,11.3657858 4.74124751,14 8.41176471,14 Z M11.0326262,5 C11.3386144,5 12,5 12,5 C12,5 11.9882665,6.50963227 12,6.97526236 L7.99159709,10.9206583 C7.68587672,10.9721871 7.35452126,10.9986255 7.02250356,10.9999478 C6.67312552,11.0013392 6.32301419,10.9749194 6.00126808,10.9206583 L4.03297106,8.93676761 L4,6.97526236 L4.9813379,6.97526236 C4.9813379,6.97526236 7.05052406,9.05643457 7.03675237,8.98556865 L11.0326262,5 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Status-/-Medium">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use fill="#8e9fb6" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

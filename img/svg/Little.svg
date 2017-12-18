@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Cross / Little</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.94978606,9.94978605 L9.94978606,4.53557249 C9.94978606,3.98328774 10.3975013,3.53557249 10.9497861,3.53557249 C11.5020708,3.53557249 11.9497861,3.98328774 11.9497861,4.53557249 L11.9497861,9.94978605 L17.3640542,9.94978605 C17.9163088,9.94978605 18.3639996,10.3974769 18.3639996,10.9497315 C18.3639996,11.5019861 17.9163088,11.9496769 17.3640542,11.9496769 L11.9497861,11.9496769 L11.9497861,17.3639996 C11.9497861,17.9162844 11.5020708,18.3639996 10.9497861,18.3639996 C10.3975013,18.3639996 9.94978606,17.9162844 9.94978606,17.3639996 L9.94978606,11.9496769 L4.53551793,11.9496769 C3.98326331,11.9496769 3.53557249,11.5019861 3.53557249,10.9497315 C3.53557249,10.3974769 3.98326331,9.94978605 4.53551793,9.94978605 L9.94978606,9.94978605 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Cross-/-Little">
+            <g id="Color-/-Medium-Gray" transform="translate(-5.000000, -5.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#8E9FB6" transform="translate(10.949786, 10.949786) rotate(-45.000000) translate(-10.949786, -10.949786) " xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

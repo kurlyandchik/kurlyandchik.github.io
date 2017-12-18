@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="8px" height="8px" viewBox="0 0 8 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Dropdown / Small</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.97125505,0.0331284852 L4,2.94976128 C4.01362256,3.01945367 3.98638031,3.01945636 4,2.94976128 L1.02874495,0.0331284852 C0.753407902,-0.00517355914 0.420683266,-0.0165475029 0.0383265947,0.0331284852 C-0.00598532964,0.324192499 -0.0191439311,0.611790791 0.0383265947,1.00533942 L3.00958165,3.92197221 C3.63029165,4.02604574 4.36978633,4.02597278 4.99041835,3.92197221 L7.96167341,1.00533942 C8.01914393,0.611790791 8.00598533,0.324192499 7.96167341,0.0331284852 C7.57931673,-0.0165475029 7.2465921,-0.00517355914 6.97125505,0.0331284852 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Dropdown-/-Small">
+            <g id="Color-/-Black" transform="translate(0.000000, 2.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#8e9fb6" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

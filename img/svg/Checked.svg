@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / UI / Checkbox / Checked</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-UI-/-Checkbox-/-Checked" fill="#00AFFF">
+            <path d="M0,1.99406028 C-3.55271368e-15,1.05554199 0.619628906,0.0189208984 1.99406028,0 L14.0059397,0 C15.1072288,0 16,0.894513756 16,1.99406028 L16,14.0059397 C16,15.1072288 15.1054862,16 14.0059397,16 L1.99406028,16 C0.892771196,16 0,15.1054862 0,14.0059397 L0,1.99406028 Z M7.20339865,10.730976 L2.60555055,7.23235131 L1.39444945,8.823965 L7.62591815,13.5656549 L14.8181311,3.58461876 L13.1955148,2.41538124 L7.20339865,10.730976 Z"></path>
+        </g>
+    </g>
+</svg>

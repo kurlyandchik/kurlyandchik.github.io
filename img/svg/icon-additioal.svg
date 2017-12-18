@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3px" height="15px" viewBox="0 0 3 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Additional / Medium</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,1.5 C0,0.671572875 0.665797234,0 1.5,0 C2.32842712,0 3,0.665797234 3,1.5 C3,2.32842712 2.33420277,3 1.5,3 C0.671572875,3 0,2.33420277 0,1.5 Z M0,7.5 C0,6.67157288 0.665797234,6 1.5,6 C2.32842712,6 3,6.66579723 3,7.5 C3,8.32842712 2.33420277,9 1.5,9 C0.671572875,9 0,8.33420277 0,7.5 Z M0,13.5 C0,12.6715729 0.665797234,12 1.5,12 C2.32842712,12 3,12.6657972 3,13.5 C3,14.3284271 2.33420277,15 1.5,15 C0.671572875,15 0,14.3342028 0,13.5 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Additional-/-Medium">
+            <g>
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#8E9FB6" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
