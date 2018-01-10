@@ -6,12 +6,16 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home-page.css" rel="stylesheet">
+    <link href="css/header-s.css" rel="stylesheet">
+    <link href="css/task.css" rel="stylesheet">
+    <link href="css/personal.css" rel="stylesheet">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
     <script src="https://openlayers.org/api/OpenLayers.js"></script>
 </head>
-<body onload="GetMap();">
+<body>
 
 <header class="header">
     <div class="wrapper">
@@ -456,152 +460,472 @@
 </div>
 
 <section class="main">
-    <div class="wrapper wrapper-home-page">
-        <div class="container-home-page">
-            <div class="container-home-page_tasks">
-                <div class="container-home-page_title">Задачи</div>
-                <a href="#" class="container-home-page_link">Все задачи</a>
-                <table class="table-tasks">
-        
-                    <thead>
-                        <tr>
-                            <th class="task">Задачи</th>
-                            <th class="executor">Исполнитель</th>
-                            <th class="data">Срок</th>
-                            <th class="status">Статус</th>
-                            <th class="icon"></th>
-                        </tr>
-                    </thead>
-        
-                    <tbody>
-                        <tr>
-                            <td class="task">Техническое обслуживание вышек связи в районе села Кукуевка</td>
-                            <td class="executor">Петр Прокофьев</td>
-                            <td class="data">27.05.17 11:00</td>
-                            <td class="status"><span class="orange">Открыта просрочена</span></td>
-                            <td class="icon">
-                                <a href="#" class="icon-mes"></a>
-                                <span class="icon-phone"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="task">Офис №2</td>
-                            <td class="executor">Бригада монтёров 8</td>
-                            <td class="data">27.05.17 11:30</td>
-                            <td class="status"><span class="orange">Открыта просрочена</span></td>
-                            <td class="icon">
-                                <a href="#" class="icon-mes"></a>
-                                <span class="icon-phone"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="task">Центр отдыха</td>
-                            <td class="executor">Анатолий Васильев и ещё 3</td>
-                            <td class="data">27.05.17 12:30</td>
-                            <td class="status"><span class="black">Открыта</span></td>
-                            <td class="icon">
-                                <a href="#" class="icon-mes"></a>
-                                <span class="icon-phone"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="task">Офис №1</td>
-                            <td class="executor">Бригада монтёров 3</td>
-                            <td class="data">27.05.17 08:40</td>
-                            <td class="status"><span class="red">Выполнена не в геозоне</span></td>
-                            <td class="icon">
-                                <a href="#" class="icon-mes"></a>
-                                <span class="icon-phone"></span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        
-            <div class="container-home-page_events-worker">
-                <div class="container-home-page_events">
-                    <div class="container-home-page_title">События</div>
-                    <a href="#" class="container-home-page_link">Все события</a>
-                    <table class="table-events">
-                        <tr>
-                            <td>
-                                <div class="task">Отредактирована задача</div>
-                                <div class="data">27.05.2017 11:34</div>
-                                <div class="txt">Техническое обслуживание вышек связи в районе села Кукуевка</div>
-                            </td>
-        
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="task">Закрыта задача</div>
-                                <div class="data">27.05.2017 11:34</div>
-                                <div class="txt">Техническое обслуживание вышек связи в районе села Кукуевка ехническое обслуживание вышек связи</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="task">Отредактирована задача</div>
-                                <div class="data">27.05.2017 11:34</div>
-                                <div colspan="2" class="txt">Техническое обслуживание вышек связи в районе села Кукуевка</div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="container-home-page_worker">
-                    <div class="container-home-page_title">Свободные работники</div>
-                    <a href="#" class="container-home-page_link">Все свободные работники</a>
-                    <table class="table-worker">
-                        <tr>
-                            <td>
-                                <div class="person">
-                                    <div class="person_name">Агапов Алексей</div>
-                                    <div class="person_position">Наладчик</div>
-                                </div>
-                                <div class="position">Оперативная бригада Западное отделение</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="person">
-                                    <div class="person_name">Нихматченко Валерий Николаевич</div>
-                                    <div class="person_position">Администратор</div>
-                                </div>
-                                <div class="position">Администрация Восточный округ</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="person">
-                                    <div class="person_name">Николай Потешкин</div>
-                                    <div class="person_position">Технолог</div>
-                                </div>
-                                <div class="position">Сервисные инженеры ОХРСВ</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="person">
-                                    <div class="person_name">Анастасия Бровкина</div>
-                                    <div class="person_position">Наладчик</div>
-                                </div>
-                                <div class="position">Сервисные инженеры ОХРСВ</div>
-                            </td>
-                        </tr>
-                    </table>
+    <div class="container-header-s">
+        <div class="wrapper">
+            <div class="block-header-list">
+                <div class="block-task-list">
+                    <div>
+                        <ul>
+                            <li class="block-task-list_link">
+                                <a href="#">Настройки</a>
+                            </li>
+                            <li class="block-task-list_link">
+                                <a href="#" class="active">Пользователи</a>
+                            </li>
+                            <li class="block-task-list_link">
+                                <a href="#">Адреса</a>
+                            </li>
+                            <li class="block-task-list_link">
+                                <a href="#">Компания</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="OSMap" class="map-task">
-            <div class="container-btn-map">
-                <div class="btn-object btnObject active">
-                    <span>Объекты</span>
-                    <span class="icon"></span>
+    </div>
+    <div class="container-header-task">
+        <div class="wrapper">
+            <div class="block-search-task">
+                <form>
+                    <input type="text" class="block-search-task_input" placeholder="Поиск">
+                    <div class="icon-search-i">
+                        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M13.657 11.666l2.27 2.27c.097.68.097 1.31 0 1.991-.68.097-1.31.097-1.99 0l-2.242-2.24c-1.12.784-2.448 1.245-3.849 1.245C3.41 14.932 0 11.655 0 7.466 0 3.276 3.41 0 7.846 0c3.811 0 7.086 3.413 7.086 7.466a7.6 7.6 0 0 1-1.275 4.2zm-5.81 1.275c2.692 0 5.094-2.504 5.094-5.475 0-2.972-2.402-5.475-5.095-5.475-3.354 0-5.855 2.404-5.855 5.475 0 3.071 2.501 5.475 5.855 5.475z" id="search-h"/></defs><use fill="#8E9FB6" fill-rule="nonzero" xlink:href="#search-h"/></svg>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="block-addit btnExport">
+                <div class="block-export">
+                    <a href="#">Экспортировать</a>
+                    <a href="#">Импортировать</a>
                 </div>
-                <div class="btn-task btnTask">
-                    Объекты
+            </div>
+            <div class="block-add-filter">
+                <a href="#filter-task" class="block-add-filter_link btnPopup" data-width-popup="810">
+                    <span class="icon-f"></span>
+                    Фильтры
+                </a>
+            </div>
+            <div class="block-btn-add-task">
+                <a href="#addusers" class="btn-add-task btnPopup" data-width-popup="1315">
+                    + Добавить пользователяы
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="addusers" class="container-new-personal">
+        <div class="container-add-personal">
+            <div class="header-task">
+                <div class="header-task_title">
+                    Добавить пользователя
                 </div>
-                <div class="btn-personal btnPersonal">
-                    Персонал
+            </div>
+        </div>
+        <div class="content-add-personal">
+            <div class="container-input">
+                <div class="container-input-50">
+                    <div class="block-input-label">
+                        <label>Пользователь</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="container-input-50">
+                    <div class="container-input-50">
+                        <div class="block-input-label">
+                            <label>E-mail</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="container-input-50">
+                        <div class="block-input-label">
+                            <label>Телефон</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>+79654189035</option>
+                                    <option>+79654189835</option>
+                                    <option>+79624189035</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="container-input">
+                <div class="container-input-50">
+                    <div class="container-input-50">
+                        <div class="block-input-label">
+                            <label>Подразделение</label>
+                            <div class="block-bnt-grey btn-add-list">
+                                + Выбрать подразделение
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-input-50">
+                        <div class="block-input-label">
+                            <label>Должность</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>Мастер ОХРСВ</option>
+                                    <option>Мастер ОХРСВ</option>
+                                    <option>Мастер ОХРСВ</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-input-50">
+    
+                    <div class="container-input-50">
+                        <div class="block-input-label">
+                            <label>Роль</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>Роль 1</option>
+                                    <option>Роль 2</option>
+                                    <option>Роль 3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="container-input-50">
+                        <div class="block-input-label">
+                            <label>Часовой пояс</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>GMT +4, -4 часа</option>
+                                    <option>GMT +6, -4 часа</option>
+                                    <option>GMT +8, -4 часа</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="container-btn-bottom">
+            <div class="block-btn-bottom_btn float-r">
+                <div class="block-bnt-grey display-top">
+                    Сбросить работнику пароль и выслать на почту
+                </div>
+                <div class="block-bnt-blue display-top">
+                    + Добавить
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-table-personal">
+        <div class="wrapper">
+            <div class="block-table-filter-users">
+                <table class="table-filter-users" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <td class="header-td td-users-title">
+                                Пользователь
+                                <span class="drop-title"></span>
+                            </td>
+                            <td class="header-td td-role">
+                                Роль
+                                <span class="drop-title"></span>
+                            </td>
+                            <td class="header-td td-timezone">
+                                Часовой пояс
+                                <span class="drop-title"></span>
+                            </td>
+                            <td class="header-td td-subdivision">
+                                Подразделение
+                                <span class="drop-title"></span>
+                            </td>
+                            <td class="header-td td-position">
+                                Должность
+                                <span class="drop-title"></span>
+                            </td>
+                            <td class="header-td td-email">
+                                E-mail
+                                <span class="drop-title"></span>
+                            </td>
+                            <td class="header-td td-tel">
+                                Телефон
+                                <span class="drop-title"></span>
+                            </td>
+                            <td class="header-td td-icon">
+    
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-users-title">
+                                <div class="td-users-title_block">
+                                    <a href="#" class="btnPopup" data-width-popup="1315">
+                                        Константин Евстегнеевский
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="td-role">
+                                <div class="td-role_block">
+                                    Администратор
+                                </div>
+                            </td>
+                            <td class="td-timezone">
+                                <div class="td-timezone_block">
+                                    GMT +2
+                                </div>
+                            </td>
+                            <td class="td-subdivision">
+                                <div class="td-subdivision_block">
+                                    Управление
+                                </div>
+                            </td>
+                            <td class="td-position">
+                                <div class="td-position_block">
+                                    Наладчик
+                                </div>
+                            </td>
+    
+                            <td class="td-email">
+                                <div class="td-email_block">
+                                    Evstegenia1276@gmail.com
+                                </div>
+                            </td>
+                            <td class="td-tel">
+                                <div class="td-tel_block">
+                                    +79654189035
+                                </div>
+                            </td>
+                            <td class="td-icon">
+                                <div class="td-icon_block">
+                                    <div class="icon-addit">
+                                        <div class="block-icon-addit btnStatusTask">
+                                            <div class="block-status-task">
+                                                <a href="#">Редактировать</a>
+                                                <a href="#">Заблокировать</a>
+                                                <a href="#">Сбросить пароль</a>
+                                                <a href="#">Удалить</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td-users-title link-disable">
+                                <div class="td-users-title_block">
+                                    <a href="#" class="btnPopup" data-width-popup="1315">
+                                        Анатолий Копнеев
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="td-role">
+                                <div class="td-role_block">
+                                    —
+                                </div>
+                            </td>
+                            <td class="td-timezone">
+                                <div class="td-timezone_block">
+                                    GMT +2
+                                </div>
+                            </td>
+                            <td class="td-subdivision">
+                                <div class="td-subdivision_block">
+                                    Управление
+                                </div>
+                            </td>
+                            <td class="td-position">
+                                <div class="td-position_block">
+                                    Зам. начальника
+                                </div>
+                            </td>
+    
+                            <td class="td-email">
+                                <div class="td-email_block">
+                                    akopneev34@mail.ru
+                                </div>
+                            </td>
+                            <td class="td-tel">
+                                <div class="td-tel_block">
+                                    +79654189078
+                                </div>
+                            </td>
+                            <td class="td-icon">
+                                <div class="td-icon_block">
+                                    <div class="icon-locked">
+                                        <div class="block-icon-locked"></div>
+                                    </div>
+                                    <div class="icon-addit">
+                                        <div class="block-icon-addit btnStatusTask"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="td-users-title">
+                                <div class="td-users-title_block">
+                                    <a href="#" class="btnPopup" data-width-popup="1315">
+                                        Лариса Неклюдова
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="td-role">
+                                <div class="td-role_block">
+                                    Диспетчер
+                                </div>
+                            </td>
+                            <td class="td-timezone">
+                                <div class="td-timezone_block">
+                                    GMT +4, +2 часа
+                                </div>
+                            </td>
+                            <td class="td-subdivision">
+                                <div class="td-subdivision_block">
+                                    ОХРСВ
+                                </div>
+                            </td>
+                            <td class="td-position">
+                                <div class="td-position_block">
+                                    Мастер
+                                </div>
+                            </td>
+                            <td class="td-email">
+                                <div class="td-email_block">
+                                    lara_necroft@gmail.com
+                                </div>
+                            </td>
+                            <td class="td-tel">
+                                <div class="td-tel_block">
+                                    +79654189089
+                                </div>
+                            </td>
+                            <td class="td-icon">
+                                <div class="td-icon_block">
+                                    <div class="icon-addit">
+                                        <div class="block-icon-addit btnStatusTask"></div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+            <div class="block-btn-filter btnFilterTask"></div>
+            <div class="block-filter-task-table">
+                <div class="block-filter-task-table_title">Отображать столбцы</div>
+                <div class="block-filter-task-table_btn-close btnCloseFilterTask">+</div>
+                <div class="block-filter-task-table_list">
+                    <ul>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f1">
+                                <span class="checkbox-custom"></span>
+                                <label for="f1">Номер задания</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f2">
+                                <span class="checkbox-custom"></span>
+                                <label for="f2">Исполнитель</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f3">
+                                <span class="checkbox-custom"></span>
+                                <label for="f3">Поставил</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f4">
+                                <span class="checkbox-custom"></span>
+                                <label for="f4">Поставлена</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f5">
+                                <span class="checkbox-custom"></span>
+                                <label for="f5">Начата</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f6">
+                                <span class="checkbox-custom"></span>
+                                <label for="f6">Срок</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f7">
+                                <span class="checkbox-custom"></span>
+                                <label for="f7">Статус</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f8">
+                                <span class="checkbox-custom"></span>
+                                <label for="f8">Срочность</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f9">
+                                <span class="checkbox-custom"></span>
+                                <label for="f9">Тип</label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="block-filter-task">
+                                <input type="checkbox" id="f10">
+                                <span class="checkbox-custom"></span>
+                                <label for="f10">Периодичность</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-page-nav">
+            <div class="wrapper">
+                <div class="block-impressions">
+                    Всего на странице <span>25</span><span class="drop-title"></span>
+                </div>
+                <div class="block-nav-page-task">
+                    <ul>
+                        <li class="number-page active">
+                            <a href="#">1</a>
+                        </li>
+                        <li class="number-page">
+                            <a href="#">2</a>
+                        </li>
+                        <li class="number-page">
+                            <a href="#">3</a>
+                        </li>
+                        <li class="number-page-interval">
+                            <a href="#">...</a>
+                        </li>
+                        <li class="number-page">
+                            <a href="#">78</a>
+                        </li>
+                        <li class="btn-next-page">
+                            <a href="#">
+                                <div class="icon-next-page"></div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -609,10 +933,13 @@
 </section>
 
 <div class="overflow"></div>
+
 <script src="js/lib/jquery-3.2.1.min.js"></script>
+<script src="js/lib/bootstrap-tooltip.js"></script>
 <script src="js/lib/jquery.fancybox.js"></script>
 <script src="js/lib/jquery.mCustomScrollbar.js"></script>
+<script src="js/lib/jquery.accordion.js"></script>
 <script src="js/main.js"></script>
-<script src="js/map.js"></script>
+<script src="js/task.js"></script>
 </body>
 </html>

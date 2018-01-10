@@ -6,12 +6,16 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,900" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fancybox.css"/>
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home-page.css" rel="stylesheet">
+    <link href="css/header-s.css" rel="stylesheet">
+    <link href="css/task.css" rel="stylesheet">
+    <link href="css/personal.css" rel="stylesheet">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
     <script src="https://openlayers.org/api/OpenLayers.js"></script>
 </head>
-<body onload="GetMap();">
+<body style="background-color: white">
 
 <header class="header">
     <div class="wrapper">
@@ -456,152 +460,117 @@
 </div>
 
 <section class="main">
-    <div class="wrapper wrapper-home-page">
-        <div class="container-home-page">
-            <div class="container-home-page_tasks">
-                <div class="container-home-page_title">Задачи</div>
-                <a href="#" class="container-home-page_link">Все задачи</a>
-                <table class="table-tasks">
-        
-                    <thead>
-                        <tr>
-                            <th class="task">Задачи</th>
-                            <th class="executor">Исполнитель</th>
-                            <th class="data">Срок</th>
-                            <th class="status">Статус</th>
-                            <th class="icon"></th>
-                        </tr>
-                    </thead>
-        
-                    <tbody>
-                        <tr>
-                            <td class="task">Техническое обслуживание вышек связи в районе села Кукуевка</td>
-                            <td class="executor">Петр Прокофьев</td>
-                            <td class="data">27.05.17 11:00</td>
-                            <td class="status"><span class="orange">Открыта просрочена</span></td>
-                            <td class="icon">
-                                <a href="#" class="icon-mes"></a>
-                                <span class="icon-phone"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="task">Офис №2</td>
-                            <td class="executor">Бригада монтёров 8</td>
-                            <td class="data">27.05.17 11:30</td>
-                            <td class="status"><span class="orange">Открыта просрочена</span></td>
-                            <td class="icon">
-                                <a href="#" class="icon-mes"></a>
-                                <span class="icon-phone"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="task">Центр отдыха</td>
-                            <td class="executor">Анатолий Васильев и ещё 3</td>
-                            <td class="data">27.05.17 12:30</td>
-                            <td class="status"><span class="black">Открыта</span></td>
-                            <td class="icon">
-                                <a href="#" class="icon-mes"></a>
-                                <span class="icon-phone"></span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="task">Офис №1</td>
-                            <td class="executor">Бригада монтёров 3</td>
-                            <td class="data">27.05.17 08:40</td>
-                            <td class="status"><span class="red">Выполнена не в геозоне</span></td>
-                            <td class="icon">
-                                <a href="#" class="icon-mes"></a>
-                                <span class="icon-phone"></span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        
-            <div class="container-home-page_events-worker">
-                <div class="container-home-page_events">
-                    <div class="container-home-page_title">События</div>
-                    <a href="#" class="container-home-page_link">Все события</a>
-                    <table class="table-events">
-                        <tr>
-                            <td>
-                                <div class="task">Отредактирована задача</div>
-                                <div class="data">27.05.2017 11:34</div>
-                                <div class="txt">Техническое обслуживание вышек связи в районе села Кукуевка</div>
-                            </td>
-        
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="task">Закрыта задача</div>
-                                <div class="data">27.05.2017 11:34</div>
-                                <div class="txt">Техническое обслуживание вышек связи в районе села Кукуевка ехническое обслуживание вышек связи</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="task">Отредактирована задача</div>
-                                <div class="data">27.05.2017 11:34</div>
-                                <div colspan="2" class="txt">Техническое обслуживание вышек связи в районе села Кукуевка</div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="container-home-page_worker">
-                    <div class="container-home-page_title">Свободные работники</div>
-                    <a href="#" class="container-home-page_link">Все свободные работники</a>
-                    <table class="table-worker">
-                        <tr>
-                            <td>
-                                <div class="person">
-                                    <div class="person_name">Агапов Алексей</div>
-                                    <div class="person_position">Наладчик</div>
-                                </div>
-                                <div class="position">Оперативная бригада Западное отделение</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="person">
-                                    <div class="person_name">Нихматченко Валерий Николаевич</div>
-                                    <div class="person_position">Администратор</div>
-                                </div>
-                                <div class="position">Администрация Восточный округ</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="person">
-                                    <div class="person_name">Николай Потешкин</div>
-                                    <div class="person_position">Технолог</div>
-                                </div>
-                                <div class="position">Сервисные инженеры ОХРСВ</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <div class="person">
-                                    <div class="person_name">Анастасия Бровкина</div>
-                                    <div class="person_position">Наладчик</div>
-                                </div>
-                                <div class="position">Сервисные инженеры ОХРСВ</div>
-                            </td>
-                        </tr>
-                    </table>
+    <div class="container-header-s">
+        <div class="wrapper">
+            <div class="block-header-list">
+                <div class="block-task-list">
+                    <div>
+                        <ul>
+                            <li class="block-task-list_link">
+                                <a href="#">Настройки</a>
+                            </li>
+                            <li class="block-task-list_link">
+                                <a href="#" class="active">Пользователи</a>
+                            </li>
+                            <li class="block-task-list_link">
+                                <a href="#">Адреса</a>
+                            </li>
+                            <li class="block-task-list_link">
+                                <a href="#">Компания</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="OSMap" class="map-task">
-            <div class="container-btn-map">
-                <div class="btn-object btnObject active">
-                    <span>Объекты</span>
-                    <span class="icon"></span>
+    </div>
+    <div class="container-add-company">
+        <div class="container-add-company-logo">
+            <div class="block-company-logo">
+                <label>Логотип</label>
+                <div class="block-company-logo_img">
+    
                 </div>
-                <div class="btn-task btnTask">
-                    Объекты
+            </div>
+            <div class="block-add-company-logo">
+                <div class="btn-add-company-logo">
+                     + Загрузить логотип
                 </div>
-                <div class="btn-personal btnPersonal">
-                    Персонал
+            </div>
+        </div>
+        <div class="container-add-company-info">
+            <div class="container-input-50">
+                <div class="block-input-label">
+                    <label>Название</label>
+                    <input type="text">
+                </div>
+                <div class="block-input-label">
+                    <label>Уведомление исполнителям по СМС о новом задании</label>
+                    <input type="text">
+                </div>
+                <div class="block-input-label">
+                    <label>Уведомление исполнителям по СМС о сообщении в чате</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="container-input-50">
+                <div class="container-input-50">
+                    <div class="block-input-label">
+                        <label>Часовой пояс</label>
+                        <div class="block-select">
+                            <div class="icon-select"></div>
+                            <select class="gray-s">
+                                <option>GMT +4, -4 часа</option>
+                                <option>GMT +6, -4 часа</option>
+                                <option>GMT +8, -4 часа</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="block-input-label">
+                        <label>Оповещать диспетчера о следующих событиях</label>
+                        <div class="block-filter-task-table">
+                            <div class="block-filter-task-table_list">
+                                <ul>
+                                    <li>
+                                        <div class="block-filter-task">
+                                            <input type="checkbox" id="f1">
+                                            <span class="checkbox-custom"></span>
+                                            <label for="f1">Номер задания</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="block-filter-task">
+                                            <input type="checkbox" id="f2">
+                                            <span class="checkbox-custom"></span>
+                                            <label for="f2">Исполнитель</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="block-filter-task">
+                                            <input type="checkbox" id="f3">
+                                            <span class="checkbox-custom"></span>
+                                            <label for="f3">Поставил</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="block-filter-task">
+                                            <input type="checkbox" id="f4">
+                                            <span class="checkbox-custom"></span>
+                                            <label for="f4">Поставлена</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-input-50">
+                    <div class="block-input-label">
+                        <label>Подразделение</label>
+                        <div class="block-bnt-grey btn-add-list">
+                            + Добавить лицензию
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -609,10 +578,13 @@
 </section>
 
 <div class="overflow"></div>
+
 <script src="js/lib/jquery-3.2.1.min.js"></script>
+<script src="js/lib/bootstrap-tooltip.js"></script>
 <script src="js/lib/jquery.fancybox.js"></script>
 <script src="js/lib/jquery.mCustomScrollbar.js"></script>
+<script src="js/lib/jquery.accordion.js"></script>
 <script src="js/main.js"></script>
-<script src="js/map.js"></script>
+<script src="js/task.js"></script>
 </body>
 </html>
