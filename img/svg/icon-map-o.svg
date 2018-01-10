@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="26px" viewBox="0 0 20 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Map pin / Big</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M20,10.1300793 C20,15.9858398 10.3586411,25.2232926 9.97987725,25.4782609 C9.62053295,25.2480811 0,16.1616211 0,10.1300793 C2.689162e-16,4.53539097 4.4771525,-1.77635684e-15 10,-1.77635684e-15 C15.5228475,-1.77635684e-15 20,4.53539097 20,10.1300793 Z M10.0849841,14 C12.1323507,14 13.7920693,12.3737241 13.7920693,10.3676112 C13.7920693,8.3614982 12.1323507,6.73522232 10.0849841,6.73522232 C8.03761743,6.73522232 6.37789884,8.3614982 6.37789884,10.3676112 C6.37789884,12.3737241 8.03761743,14 10.0849841,14 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Map-pin-/-Big">
+            <g id="Color-/-Black">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

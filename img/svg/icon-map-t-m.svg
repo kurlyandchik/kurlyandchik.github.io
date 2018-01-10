@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
-    <title>Icons / Worker / Big</title>
+    <title>Icons / Taskmaster / Big</title>
     <desc>Created with Sketch.</desc>
     <defs>
         <circle id="path-1" cx="8" cy="8" r="8"></circle>
-        <circle id="path-3" cx="6" cy="6" r="6"></circle>
+        <polygon id="path-3" points="6.1164999 9.54198693 2.33629507 10.9266662 2.57033836 7.12225121 2.22044605e-16 4.17361509 3.92485154 3.20703657 6.1164999 0 8.30814826 3.20703657 12.2329998 4.17361509 9.66266144 7.12225121 9.89670473 10.9266662"></polygon>
     </defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icons-/-Worker-/-Big">
+        <g id="Icons-/-Taskmaster-/-Big">
             <g id="Color-/-Black" transform="translate(4.000000, 4.000000)">
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
@@ -19,10 +19,12 @@
                 </g>
             </g>
             <g id="Color-/-Medium-Green" transform="translate(6.000000, 6.000000)">
-                <mask id="mask-4" fill="white">
-                    <use xlink:href="#path-3"></use>
-                </mask>
-                <use id="Mask" fill="#09CD07" xlink:href="#path-3"></use>
+                <g>
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Mask" fill="#FFD342" xlink:href="#path-3"></use>
+                </g>
             </g>
         </g>
     </g>

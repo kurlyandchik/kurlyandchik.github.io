@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="26px" viewBox="0 0 20 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Task / Big</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M13.0011726,20.5418293 C17.057674,19.2672037 20,15.4772104 20,11 C20,5.4771525 15.5228475,1 10,1 C4.4771525,1 0,5.4771525 0,11 C0,15.5400066 2.85796446,19.3312361 6.98191097,20.5465961 C7.25465154,20.626975 8.99304087,24.8486676 9.88840491,24.8524352 C10.8813882,24.8566136 12.7440778,20.6226131 13.0011726,20.5418293 Z" id="path-1"></path>
+        <filter x="-15.0%" y="-12.6%" width="130.0%" height="125.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.284448596 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M8,18 C8.69579187,18 9.37083712,15.3429169 10.0144144,15.1819463 C13.4575526,14.3207536 16,11.3038259 16,7.71428571 C16,3.45380336 12.418278,0 8,0 C3.581722,0 0,3.45380336 0,7.71428571 C0,11.3074316 2.54755767,14.3268139 5.99596411,15.1845349 C6.6364189,15.3438351 7.30794733,18 8,18 Z" id="path-3"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Task-/-Big">
+            <g id="Oval-5">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#2F2F2F" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Color-/-Medium-Green" transform="translate(2.000000, 3.000000)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <use id="Mask" fill="white" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

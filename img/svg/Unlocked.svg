@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Lock / Unlocked</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,5 L11,3 C11,2.44771525 10.5522847,2 10,2 L6,2 C5.57483501,2 5.20027991,2.26779523 5.05863528,2.66099821 C4.87145857,3.1805974 4.2985035,3.45007908 3.7789043,3.26290237 C3.2593051,3.07572567 2.98982343,2.50277059 3.17700013,1.9831714 C3.60223112,0.802737756 4.72499018,1.21486654e-15 6,8.8817842e-16 L10,1.11022302e-15 C11.6568542,4.4408921e-16 13,1.34314575 13,3 L13,5.17070571 C14.1651924,5.58254212 15,6.69378117 15,8 L15,13 C15,14.6568542 13.6568542,16 12,16 L4,16 C2.34314575,16 1,14.6568542 1,13 L1,8 C1,6.34314575 2.34314575,5 4,5 L11,5 Z M4,7 C3.44771525,7 3,7.44771525 3,8 L3,13 C3,13.5522847 3.44771525,14 4,14 L12,14 C12.5522847,14 13,13.5522847 13,13 L13,8 C13,7.44771525 12.5522847,7 12,7 L4,7 Z M8,9 C8.55228475,9 9,9.44771525 9,10 L9,11 C9,11.5522847 8.55228475,12 8,12 C7.44771525,12 7,11.5522847 7,11 L7,10 C7,9.44771525 7.44771525,9 8,9 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Lock-/-Unlocked">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Combined-Shape" fill="#030303" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

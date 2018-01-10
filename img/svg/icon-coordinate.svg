@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Map pin / Medium</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M6.5,16 C4.79956055,16 0,10.0898509 0,6.5 C0,2.91014913 2.91014913,0 6.5,0 C10.0898509,0 13,2.91014913 13,6.5 C13,10.0898509 8.20043945,16 6.5,16 Z M6.90712571,13.5230958 C7.48812105,13.0086372 8.15379814,12.2604533 8.77479414,11.4135495 C10.1282799,9.56768858 11,7.63062828 11,6.5 C11,4.01471863 8.98528137,2 6.5,2 C4.01471863,2 2,4.01471863 2,6.5 C2,7.63062828 2.87172012,9.56768858 4.22520586,11.4135495 C4.84620186,12.2604533 5.51187895,13.0086372 6.09287429,13.5230958 C6.24191206,13.6550655 6.37937444,13.7661516 6.5,13.8540354 C6.62062556,13.7661516 6.75808794,13.6550655 6.90712571,13.5230958 Z M6.5,8 C5.67157288,8 5,7.32842712 5,6.5 C5,5.67157288 5.67157288,5 6.5,5 C7.32842712,5 8,5.67157288 8,6.5 C8,7.32842712 7.32842712,8 6.5,8 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Map-pin-/-Medium">
+            <g id="Color-/-Medium-Gray" transform="translate(1.000000, 0.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#8E9FB6" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

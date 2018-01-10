@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="26px" viewBox="0 0 19 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Attached file / Big</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M11,24 L11,21 C11,19.5025633 12.1237069,18 14,18 C14.7897854,18.0313075 15.9459264,18.0577531 17,18.0569743 L17,2 L2,2 L2,24 L11,24 Z M16.8345709,20.1323433 C15.8558091,20.1076489 14.8039622,20.0268659 14,20 C13.3907175,19.9914007 13.0087844,20.451886 13,21 L13,23.2 L16.8345709,20.1323433 Z M2,0 L17,0 C18.1484093,-6.46997646e-16 18.9990246,0.8954305 19,2 L19,21 L13,26 L2,26 C0.850615307,26 1.28500616e-16,25.1045695 0,24 L0,2 C-1.28500616e-16,0.8954305 0.850615307,2.02908437e-16 2,0 Z M5,7 L14,7 C14.5522847,7 15,7.44771525 15,8 C15,8.55228475 14.5522847,9 14,9 L5,9 C4.44771525,9 4,8.55228475 4,8 C4,7.44771525 4.44771525,7 5,7 Z M5,11 L14,11 C14.5522847,11 15,11.4477153 15,12 C15,12.5522847 14.5522847,13 14,13 L5,13 C4.44771525,13 4,12.5522847 4,12 C4,11.4477153 4.44771525,11 5,11 Z M5,15 L10,15 C10.5522847,15 11,15.4477153 11,16 C11,16.5522847 10.5522847,17 10,17 L5,17 C4.44771525,17 4,16.5522847 4,16 C4,15.4477153 4.44771525,15 5,15 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Attached-file-/-Big">
+            <g id="Color-/-Medium-Green">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#00AFFF" fill-rule="nonzero" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
