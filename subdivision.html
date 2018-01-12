@@ -13,6 +13,7 @@
     <link href="css/task.css" rel="stylesheet">
     <link href="css/personal.css" rel="stylesheet">
     <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="css/jquery.accordion.css" rel="stylesheet">
     <script src="https://openlayers.org/api/OpenLayers.js"></script>
 </head>
 <body>
@@ -494,10 +495,10 @@
                     <a href="#">Группы объектов</a>
                 </li>
                 <li>
-                    <a href="#" class="active">Должности</a>
+                    <a href="#">Должности</a>
                 </li>
                 <li>
-                    <a href="#">Подразделения</a>
+                    <a href="#" class="active">Подразделения</a>
                 </li>
                 <li>
                     <a href="#">Роли</a>
@@ -507,120 +508,183 @@
         <div class="container-content-w">
             <div class="block-search">
                 <form>
-                    <input type="text" placeholder="Поиск" class="block-search_input">
+                    <input type="text" placeholder="Поиск" class="block-search_input search-subdivision">
                     <div class="icon-search-i">
                         <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M13.657 11.666l2.27 2.27c.097.68.097 1.31 0 1.991-.68.097-1.31.097-1.99 0l-2.242-2.24c-1.12.784-2.448 1.245-3.849 1.245C3.41 14.932 0 11.655 0 7.466 0 3.276 3.41 0 7.846 0c3.811 0 7.086 3.413 7.086 7.466a7.6 7.6 0 0 1-1.275 4.2zm-5.81 1.275c2.692 0 5.094-2.504 5.094-5.475 0-2.972-2.402-5.475-5.095-5.475-3.354 0-5.855 2.404-5.855 5.475 0 3.071 2.501 5.475 5.855 5.475z" id="search-h"/></defs><use fill="#8E9FB6" fill-rule="nonzero" xlink:href="#search-h"/></svg>
                     </div>
-                    <a href="#addposition" class="block-bnt-grey btnPopup float-r" data-width-popup="650">
-                        + Добавить должность
+                    <a href="#addsubdivision" class="block-bnt-grey btnPopup float-r" data-width-popup="450">
+                        + Добавить родительское подразделение
                     </a>
+                    <div class="block-subdivision-search-txt float-r">
+                        <span>Весго лицензий: 1 000</span>   <span>Активно: 997</span>   <span>Свободно: 3</span>
+                    </div>
                 </form>
             </div>
-            <div class="block-table-personal">
-                <table class="table-personal">
-                    <tbody>
-                        <tr>
-                            <td class="td-position">
-                                <div class="td-position_block">Наладчик</div>
-                            </td>
-                            <td class="td-position-task">
-                                <div class="td-position-task_block">Составляет весь технологический процесс обработки самых разных деталей, разбираться в кинематических схемах и устройствах разнообразных станков с программным управлением</div>
-                            </td>
-                            <td class="td-icon">
-                                <div class="td-icon_block">
-                                    <div class="icon-addit">
-                                        <div class="block-icon-addit btnStatusTask">
-                                            <div class="block-status-task">
-                                                <a href="#">Редактировать</a>
-                                                <a href="#">Заблокировать</a>
-                                                <a href="#">Удалить</a>
+        
+            <div class="container-accordion-group-object block-subdivision">
+                <section class="container-accordion-group" data-accordion-group>
+                    <!-- 1 -->
+                    <section data-accordion class="container-accordion-group_first">
+                        <button data-control>ОХРСВ</button>
+                        <div class="icon-addit">
+                            <div class="block-icon-addit btnStatusTask">
+                                <div class="block-status-task">
+                                    <a href="#">Редактировать</a>
+                                    <a href="#">Заблокировать</a>
+                                    <a href="#addsubgroup" class="btnPopup" data-width-popup="400">Добавить подгруппу</a>
+                                    <a href="#">Удалить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-active-info">
+                            <div class="block-active-info_txt">
+                                Активно: 200
+                            </div>
+                            <div class="block-active-info_counter">
+                                <div class="btn-minus"></div>
+                                <div class="active-number">100</div>
+                                <div class="btn-plus"></div>
+                            </div>
+                        </div>
+                        <div data-content>
+                            <article data-accordion>
+                                <div class="icon-addit">
+                                    <div class="block-icon-addit btnStatusTask"></div>
+                                </div>
+                                <button data-control>Грековское отделение</button>
+                                <div data-content>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Офисные здания</a>
+                                            <div class="icon-addit">
+                                                <div class="block-icon-addit btnStatusTask"></div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Развлечения</a>
+                                            <div class="icon-addit">
+                                                <div class="block-icon-addit btnStatusTask"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Подсобное хозяйство</a>
+                                            <div class="icon-addit">
+                                                <div class="block-icon-addit btnStatusTask"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </td>
-                        </tr>
-        
-                        <tr>
-                            <td class="td-position">
-                                <div class="td-position_block">Специалист</div>
-                            </td>
-                            <td class="td-position-task">
-                                <div class="td-position-task_block">
-                                    Установке, обслуживает и ремонтирует высокую технику. Занимается инсталяцией, монтажом, настройкой и ремонтом техники, обеспечивает ее надежную эксплуатацию
+                            </article>
+                        </div>
+                        <div data-content>
+                            <article data-accordion>
+                                <div class="icon-addit">
+                                    <div class="block-icon-addit btnStatusTask"></div>
                                 </div>
-                            </td>
-                            <td class="td-icon">
-                                <div class="td-icon_block">
-                                    <div class="icon-addit">
-                                        <div class="block-icon-addit btnStatusTask">
-                                        </div>
-                                    </div>
+                                <button data-control>Омское отделение</button>
+                                <div data-content>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Офисные здания</a>
+                                            <div class="icon-addit">
+                                                <div class="block-icon-addit btnStatusTask"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Развлечения</a>
+                                            <div class="icon-addit">
+                                                <div class="block-icon-addit btnStatusTask"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#">Подсобное хозяйство</a>
+                                            <div class="icon-addit">
+                                                <div class="block-icon-addit btnStatusTask"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </td>
-                        </tr>
-        
-                        <tr>
-                            <td class="td-position">
-                                <div class="td-position_block">Технолог</div>
-                            </td>
-                            <td class="td-position-task">
-                                <div class="td-position-task_block">
-                                    Технолог занимается внедрением и выстраиванием производственных процессов на предприятии, следит за качеством продукции, подбирает сырье, технологии и оборудование при запуске новых продуктов, оформляет техническую документацию. Также вместе с экономистами компании он работает над снижением издержек и повышением ее эффективности.
-                                </div>
-                            </td>
-                            <td class="td-icon">
-                                <div class="td-icon_block">
-                                    <div class="icon-addit">
-                                        <div class="block-icon-addit btnStatusTask">
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-        
-                        <tr>
-                            <td class="td-position">
-                                <div class="td-position_block">Тестер</div>
-                            </td>
-                            <td class="td-position-task">
-                                <div class="td-position-task_block">
-                                    Тестер призван обеспечить отличное качество программного продукта, включая и самые ранние этапы его разработки
-                                </div>
-                            </td>
-                            <td class="td-icon">
-                                <div class="td-icon_block">
-                                    <div class="icon-addit">
-                                        <div class="block-icon-addit btnStatusTask">
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </article>
+                        </div>
+                    </section>
+                    <!-- 2 -->
+                    <section data-accordion class="container-accordion-group_first">
+                        <button data-control>Закреплённые территории </button>
+                        <div class="icon-addit">
+                            <div class="block-icon-addit btnStatusTask"></div>
+                        </div>
+                        <div class="block-active-info">
+                            <div class="block-active-info_txt">
+                                Активно: 200
+                            </div>
+                            <div class="block-active-info_counter">
+                                <div class="btn-minus"></div>
+                                <div class="active-number">100</div>
+                                <div class="btn-plus"></div>
+                            </div>
+                        </div>
+                        <div data-content>
+                            <ul>
+                                <li>
+                                    <a href="#">Экзамены по ТБ</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <!-- 3 -->
+                    <section data-accordion class="container-accordion-group_first">
+                        <button data-control>Новая группа</button>
+                        <div class="block-active-info">
+                            <div class="block-active-info_txt">
+                                Активно: 200
+                            </div>
+                            <div class="block-active-info_counter">
+                                <div class="btn-minus"></div>
+                                <div class="active-number">100</div>
+                                <div class="btn-plus"></div>
+                            </div>
+                        </div>
+                        <div data-content>
+                            <ul>
+                                <li>
+                                    <a href="#">Новая группа</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </section>
             </div>
         </div>
         
-        <div id="addposition" class="container-new-personal">
+        <div id="addsubdivision" class="container-new-personal">
             <div class="container-add-personal">
                 <div class="header-task">
                     <div class="header-task_title">
-                        Редактировать должность
+                        Добавить родительское подразделение
                     </div>
                 </div>
             </div>
-            <div class="container-new-position">
-                <div class="container-input w-50">
+            <div class="container-group-t">
+                <div class="container-input">
                     <div class="block-input-label">
-                        <label>Категория</label>
+                        <label>Название категории</label>
                         <input type="text">
                     </div>
                 </div>
                 <div class="container-input">
-                    <div class="block-input-label">
-                        <label>Название подразделения</label>
-                        <textarea></textarea>
+                    <div class="block-input-label block-lic-edit">
+                        <label>Лицензии</label>
+                        <input type="text">
+                        <span class="block-number">Свободно: 25 </span>
+                    </div>
+                    <div class="block-input-label block-icon-edit">
+                        <label>Иконка</label>
+                        <div class="block-avatar-edit_img">
+                            <div class="avatar-img"></div>
+                        </div>
+                        <div class="block-icon-edit_btn">
+                            + Сменить
+                        </div>
                     </div>
                 </div>
             </div>
