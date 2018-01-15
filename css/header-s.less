@@ -1,0 +1,70 @@
+@import "mix";
+
+.container-header-s{
+  width: 100%;
+  background-color: #6A7275;
+  position: fixed;
+  z-index: 3;
+  top: 55px;
+}
+
+.container-header-s + .container-header-task{
+  top: 99px;
+}
+
+.block-header-list{
+  display: flex;
+}
+
+.block-task-list{
+  flex: 3 3 1920px;
+  //overflow-x: auto;
+  overflow: hidden;
+  white-space:nowrap;
+  .block-task-list_link{
+    display: inline;
+    a{
+      .robot-regular;
+      color: #DBDBDB;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration: none;
+      padding: 12px 10px;
+      display: inline-block;
+      .hover-color;
+      &:hover{
+        color: #00AFFF;
+      }
+    }
+    .active{
+      .robot-bold;
+      color: #00AFFF;
+      background-color: #4F5A5C;
+      border-bottom: 3px solid #00afff;
+    }
+  }
+}
+
+.block-add-tab{
+  flex: 1 1 195px;
+  .robot-regular;
+  color: #DBDBDB;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  padding: 6px 17px;
+  border-left: 1px solid #474B4E;
+  margin: 6px 0 5px;
+}
+
+.block-schedule-link{
+  flex: 1 1 185px;
+  .robot-regular;
+  color: #DBDBDB;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  padding: 6px 17px;
+  border-left: 1px solid #474B4E;
+  margin: 6px 0 5px;
+}
