@@ -1,0 +1,1080 @@
+<div id="addtask" class="container-new-task">
+    <div class="container-add-task">
+        <div class="header-task">
+            <div class="header-task_title">
+                Добавить задачу
+            </div>
+        </div>
+        <div class="block-content-task">
+            <div class="block-input input-3">
+                <div class="block-input-label_txt block-input-label">
+                    <label>Название</label>
+                    <input type="text">
+                </div>
+                <div class="block-input-label block-input-label_sel">
+                    <label>Группа шаблонов</label>
+                    <div class="block-select">
+                        <div class="icon-select"></div>
+                        <select class="gray-s">
+                            <option>Группа шаблонов 1</option>
+                            <option>Группа шаблонов 2</option>
+                            <option>Группа шаблонов 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="block-input-label block-input-label_sel">
+                    <label>Шаблон</label>
+                    <div class="block-select">
+                        <div class="icon-select"></div>
+                        <select class="gray-s">
+                            <option>Шаблон 1</option>
+                            <option>Шаблон 2</option>
+                            <option>Шаблон 3</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-task-map">
+            <div class="block-task-map">
+                <div class="container-task-info">
+                    <div class="block-add-object">
+                        <div class="container-title">
+                            <div class="block-title float-l">
+                                Объекты
+                            </div>
+                            <div class="block-check-txt float-r">
+                                <input type="checkbox">
+                                <span class="checkbox-custom"></span>
+                                <label>Создать подзадачи на каждый объект</label>
+                            </div>
+                        </div>
+                        <div class="container-enter">
+                            <div class="container-enter_address display-bottom">
+                                <div class="block-input-label block-input-label_address display-bottom">
+                                    <label>Адрес</label>
+                                    <input type="text">
+                                </div>
+                                <div class="block-bnt-grey btn-add-object display-bottom">
+                                    + Добавить объект
+                                </div>
+                            </div>
+                            <div class="container-enter_list display-bottom">
+                                <div class="block-bnt-grey btn-add-list">
+                                    + Выбрать из списка
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-add-object">
+                        <div class="container-title">
+                            <div class="block-title float-l">
+                                Исполнители
+                            </div>
+                        </div>
+                        <div class="container-enter">
+                            <div class="container-enter_list">
+                                <div class="block-bnt-grey btn-add-list">
+                                    + Выбрать из списка
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-add-object">
+                        <div class="container-title">
+                            <div class="block-title float-l">
+                                Сроки
+                            </div>
+                        </div>
+                        <div class="container-enter">
+                            <div class="block-input-label w-210 display-middle">
+                                <label>Тип</label>
+                                <div class="block-input-label">
+                                    <div class="block-input-label_radio display-middle">
+                                        <input type="radio" name="check-type" class="block-radio" checked>
+                                        <label>Обычная</label>
+                                    </div>
+                                    <div class="block-input-label_radio display-middle">
+                                        <input type="radio" name="check-type" class="block-radio">
+                                        <label>Срочная</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-input-label display-middle block-data-time">
+                                <label>Дата начала</label>
+                                <div class="block-data">
+                                    <i class="icon-cal"></i>
+                                    Дата
+                                </div>
+                                <div class="block-time">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <div class="block-input-label display-middle block-data-period">
+                                <label>Срок исполнения</label>
+                                <div class="block-data_period">
+                                    <input type="text">
+                                </div>
+                                <div class="block-list_period">
+                                    <div class="icon-select"></div>
+                                    <select class="gray-s">
+                                        <option>Часов</option>
+                                        <option>Минут</option>
+                                        <option>Дней</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="block-input-label display-middle w-24">
+                                <label>Повторение</label>
+                                <div class="block-bnt-grey btn-add-list">
+                                    + Изменить повторение
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-add-object">
+                        <div class="container-title">
+                            <div class="block-title float-l">
+                                Описание задачи
+                            </div>
+                        </div>
+                        <div class="container-enter">
+                            <div class="block-textarea">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block-add-object">
+                        <div class="container-title">
+                            <div class="block-title float-l">
+                                Файлы по задаче
+                            </div>
+                        </div>
+                        <div class="container-enter">
+                            <div class="container-enter_list">
+                                <div class="block-bnt-grey btn-add-list">
+                                    + Прикрепить файл
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="container-map-task">
+                    <div id="mapTask" class="block-map"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-btn-bottom">
+            <div class="block-btn-bottom_check float-l">
+                <div class="block-check-txt">
+                    <input type="checkbox">
+                    <span class="checkbox-custom"></span>
+                    <label>Создать подзадачи на каждый объект</label>
+                </div>
+            </div>
+            <div class="block-btn-bottom_btn float-r">
+                <a href="#addtaskdop" class="block-bnt-grey display-top btnPopup" data-width-popup="1315">
+                    + Добавить подзадачу
+                </a>
+                <div class="block-bnt-blue display-top">
+                    Сохранить задачу
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Dop Task -->
+<div id="addtaskdop" class="container-new-task">
+    <div class="container-add-task">
+
+        <div class="container-accordion">
+            <div class="header-task btnAccordion">
+                <div class="icon-drop-accordion"></div>
+                <div class="header-task_title">
+                    Срочные зимние курсы часть первая
+                </div>
+            </div>
+            <div class="content-add-task">
+                <div class="block-content-task">
+                    <div class="block-input input-3">
+                        <div class="block-input-label_txt block-input-label">
+                            <label>Название</label>
+                            <input type="text">
+                        </div>
+                        <div class="block-input-label block-input-label_sel">
+                            <label>Группа шаблонов</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>Группа шаблонов 1</option>
+                                    <option>Группа шаблонов 2</option>
+                                    <option>Группа шаблонов 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="block-input-label block-input-label_sel">
+                            <label>Шаблон</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>Шаблон 1</option>
+                                    <option>Шаблон 2</option>
+                                    <option>Шаблон 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-task-map">
+                    <div class="block-task-map">
+                        <div class="container-task-info">
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Объекты
+                                    </div>
+                                    <div class="block-check-txt float-r">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <label>Создать подзадачи на каждый объект</label>
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_address display-bottom">
+                                        <div class="block-input-label block-input-label_address display-bottom">
+                                            <label>Адрес</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="block-bnt-grey btn-add-object display-bottom">
+                                            + Добавить объект
+                                        </div>
+                                    </div>
+                                    <div class="container-enter_list display-bottom">
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Выбрать из списка
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Исполнители
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_list">
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Выбрать из списка
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Сроки
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="block-input-label w-210 display-middle">
+                                        <label>Тип</label>
+                                        <div class="block-input-label">
+                                            <div class="block-input-label_radio display-middle">
+                                                <input type="radio" name="check-type" class="block-radio" checked>
+                                                <label>Обычная</label>
+                                            </div>
+                                            <div class="block-input-label_radio display-middle">
+                                                <input type="radio" name="check-type" class="block-radio">
+                                                <label>Срочная</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle block-data-time">
+                                        <label>Дата начала</label>
+                                        <div class="block-data">
+                                            <i class="icon-cal"></i>
+                                            Дата
+                                        </div>
+                                        <div class="block-time">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle block-data-period">
+                                        <label>Срок исполнения</label>
+                                        <div class="block-data_period">
+                                            <input type="text">
+                                        </div>
+                                        <div class="block-list_period">
+                                            <div class="icon-select"></div>
+                                            <select>
+                                                <option>Часов</option>
+                                                <option>Минут</option>
+                                                <option>Дней</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle w-24">
+                                        <label>Повторение</label>
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Изменить повторение
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Описание задачи
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="block-textarea">
+                                        <textarea></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Файлы по задаче
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_list">
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Прикрепить файл
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container-map-task">
+                            <div class="block-map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-accordion block-dop-task">
+            <div class="header-task btnAccordion">
+                <div class="icon-drop-accordion"></div>
+                <div class="header-task_title">
+                    Подзадача 1 <span> Срочные зимние курсы часть первая </span>
+                </div>
+                <div class="block-btn-header-task">
+                    <div class="btn-trash"></div>
+                    <div class="btn-row-down"></div>
+                </div>
+            </div>
+            <div class="content-add-task">
+                <div class="block-content-task">
+                    <div class="block-input input-3">
+                        <div class="block-input-label_txt block-input-label">
+                            <label>Название</label>
+                            <input type="text">
+                        </div>
+                        <div class="block-input-label block-input-label_sel">
+                            <label>Группа шаблонов</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>Группа шаблонов 1</option>
+                                    <option>Группа шаблонов 2</option>
+                                    <option>Группа шаблонов 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="block-input-label block-input-label_sel">
+                            <label>Шаблон</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>Шаблон 1</option>
+                                    <option>Шаблон 2</option>
+                                    <option>Шаблон 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-task-map">
+                    <div class="block-task-map">
+                        <div class="container-task-info">
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Объекты
+                                    </div>
+                                    <div class="block-check-txt float-r">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <label>Создать подзадачи на каждый объект</label>
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_address display-bottom">
+                                        <div class="block-input-label block-input-label_address display-bottom">
+                                            <label>Адрес</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="block-bnt-grey btn-add-object display-bottom">
+                                            + Добавить объект
+                                        </div>
+                                    </div>
+                                    <div class="container-enter_list display-bottom">
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Выбрать из списка
+                                        </div>
+                                    </div>
+                                    <div class="container-address-info">
+                                        <div class="container-address-info_list">
+                                            <div class="block-address-info_title">
+                                                Обучающий центр, Корпус 1 с длинным названием в несколько строк
+                                            </div>
+                                            <div class="block-address-info_txt">
+                                                Российская Федерация, Новосибирская область, г. Бердск, Территория, изъятая из земель подсобного хозяйства Всесоюзного центрального совета профессиональных союзов, для организации крестьянского хозяйства, дом 17
+                                            </div>
+                                            <div class="block-remove-address-info btnRemoveInfo"></div>
+                                        </div>
+                                        <div class="container-address-info_list">
+                                            <div class="block-address-info_title">
+                                                Обучающий центр, Корпус 3
+                                            </div>
+                                            <div class="block-address-info_txt">
+                                                Речная 16, Греково, Ростовская обл. Россия
+                                            </div>
+                                            <div class="block-remove-address-info btnRemoveInfo"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Исполнители
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_list">
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Выбрать из списка
+                                        </div>
+                                    </div>
+
+                                    <div class="container-executor-info">
+                                        <div class="container-executor-info_list">
+                                            <div class="block-executor-name">Анастасия Бровкина</div>
+                                            <div class="block-executor-position">Специалист</div>
+                                            <div class="block-executor-group">Сервисные инженеры, ОХРСВ</div>
+                                            <div class="block-remove-executor btnRemoveExecutor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Сроки
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="block-input-label w-210 display-middle">
+                                        <label>Тип</label>
+                                        <div class="block-input-label">
+                                            <div class="block-input-label_radio display-middle">
+                                                <input type="radio" name="check-type" class="block-radio" checked>
+                                                <label>Обычная</label>
+                                            </div>
+                                            <div class="block-input-label_radio display-middle">
+                                                <input type="radio" name="check-type" class="block-radio">
+                                                <label>Срочная</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle block-data-time">
+                                        <label>Дата начала</label>
+                                        <div class="block-data">
+                                            <i class="icon-cal"></i>
+                                            Дата
+                                        </div>
+                                        <div class="block-time">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle block-data-period">
+                                        <label>Срок исполнения</label>
+                                        <div class="block-data_period">
+                                            <input type="text">
+                                        </div>
+                                        <div class="block-list_period">
+                                            <div class="icon-select"></div>
+                                            <select class="gray-s">
+                                                <option>Часов</option>
+                                                <option>Минут</option>
+                                                <option>Дней</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle w-24">
+                                        <label>Повторение</label>
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Изменить повторение
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Описание задачи
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="block-textarea">
+                                        <textarea></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Файлы по задаче
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_list">
+                                        <div class="block-bnt-grey btn-add-list display-middle">
+                                            + Прикрепить файл
+                                        </div>
+                                        <div class="block-file-info display-middle">
+                                            <div class="btn-close"></div>
+                                            <div class="block-file-info_txt">
+                                                Перечень необходимых в деле документов .txt (2.3 MB)
+                                            </div>
+                                        </div>
+                                        <div class="block-file-info display-middle">
+                                            <div class="btn-close"></div>
+                                            <div class="block-file-info_txt">
+                                                Большой перечень крайне необходимых для производства…txt (2.3 MB)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container-map-task">
+                            <div class="block-map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-accordion block-dop-task">
+            <div class="header-task btnAccordion openAccordion">
+                <div class="icon-drop-accordion"></div>
+                <div class="header-task_title">
+                    Подзадача 2 <span> Срочные зимние курсы часть первая </span>
+                </div>
+                <div class="block-btn-header-task">
+                    <div class="btn-trash"></div>
+                    <div class="btn-row-down"></div>
+                    <div class="btn-row-up"></div>
+                </div>
+            </div>
+            <div class="content-add-task activeBurger">
+                <div class="block-content-task">
+                    <div class="block-input input-3">
+                        <div class="block-input-label_txt block-input-label">
+                            <label>Название</label>
+                            <input type="text">
+                        </div>
+                        <div class="block-input-label block-input-label_sel">
+                            <label>Группа шаблонов</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>Группа шаблонов 1</option>
+                                    <option>Группа шаблонов 2</option>
+                                    <option>Группа шаблонов 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="block-input-label block-input-label_sel">
+                            <label>Шаблон</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select>
+                                    <option>Шаблон 1</option>
+                                    <option>Шаблон 2</option>
+                                    <option>Шаблон 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-task-map">
+                    <div class="block-task-map">
+                        <div class="container-task-info">
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Объекты
+                                    </div>
+                                    <div class="block-check-txt float-r">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <label>Создать подзадачи на каждый объект</label>
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_address display-bottom">
+                                        <div class="block-input-label block-input-label_address display-bottom">
+                                            <label>Адрес</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="block-bnt-grey btn-add-object display-bottom">
+                                            + Добавить объект
+                                        </div>
+                                    </div>
+                                    <div class="container-enter_list display-bottom">
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Выбрать из списка
+                                        </div>
+                                    </div>
+                                    <div class="container-address-info">
+                                        <div class="container-address-info_list">
+                                            <div class="block-address-info_title">
+                                                Обучающий центр, Корпус 1 с длинным названием в несколько строк
+                                            </div>
+                                            <div class="block-address-info_txt">
+                                                Российская Федерация, Новосибирская область, г. Бердск, Территория, изъятая из земель подсобного хозяйства Всесоюзного центрального совета профессиональных союзов, для организации крестьянского хозяйства, дом 17
+                                            </div>
+                                            <div class="block-remove-address-info btnRemoveInfo"></div>
+                                        </div>
+                                        <div class="container-address-info_list">
+                                            <div class="block-address-info_title">
+                                                Обучающий центр, Корпус 3
+                                            </div>
+                                            <div class="block-address-info_txt">
+                                                Речная 16, Греково, Ростовская обл. Россия
+                                            </div>
+                                            <div class="block-remove-address-info btnRemoveInfo"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Исполнители
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_list">
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Выбрать из списка
+                                        </div>
+                                    </div>
+
+                                    <div class="container-executor-info">
+                                        <div class="container-executor-info_list">
+                                            <div class="block-executor-name">Анастасия Бровкина</div>
+                                            <div class="block-executor-position">Специалист</div>
+                                            <div class="block-executor-group">Сервисные инженеры, ОХРСВ</div>
+                                            <div class="block-remove-executor btnRemoveExecutor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Сроки
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="block-input-label w-210 display-middle">
+                                        <label>Тип</label>
+                                        <div class="block-input-label">
+                                            <div class="block-input-label_radio display-middle">
+                                                <input type="radio" name="check-type" class="block-radio" checked>
+                                                <label>Обычная</label>
+                                            </div>
+                                            <div class="block-input-label_radio display-middle">
+                                                <input type="radio" name="check-type" class="block-radio">
+                                                <label>Срочная</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle block-data-time">
+                                        <label>Дата начала</label>
+                                        <div class="block-data">
+                                            <i class="icon-cal"></i>
+                                            Дата
+                                        </div>
+                                        <div class="block-time">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle block-data-period">
+                                        <label>Срок исполнения</label>
+                                        <div class="block-data_period">
+                                            <input type="text">
+                                        </div>
+                                        <div class="block-list_period">
+                                            <div class="icon-select"></div>
+                                            <select class="gray-s">
+                                                <option>Часов</option>
+                                                <option>Минут</option>
+                                                <option>Дней</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle w-24">
+                                        <label>Повторение</label>
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Изменить повторение
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Описание задачи
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="block-textarea">
+                                        <textarea></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Файлы по задаче
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_list">
+                                        <div class="block-bnt-grey btn-add-list display-middle">
+                                            + Прикрепить файл
+                                        </div>
+                                        <div class="block-file-info display-middle">
+                                            <div class="btn-close"></div>
+                                            <div class="block-file-info_txt">
+                                                Перечень необходимых в деле документов .txt (2.3 MB)
+                                            </div>
+                                        </div>
+                                        <div class="block-file-info display-middle">
+                                            <div class="btn-close"></div>
+                                            <div class="block-file-info_txt">
+                                                Большой перечень крайне необходимых для производства…txt (2.3 MB)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container-map-task">
+                            <div class="block-map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-accordion block-dop-task">
+            <div class="header-task btnAccordion">
+                <div class="icon-drop-accordion"></div>
+                <div class="header-task_title">
+                    Подзадача 3 <span> Срочные зимние курсы часть первая </span>
+                </div>
+                <div class="block-btn-header-task">
+                    <div class="btn-trash"></div>
+                    <div class="btn-row-up"></div>
+                </div>
+            </div>
+            <div class="content-add-task">
+                <div class="block-content-task">
+                    <div class="block-input input-3">
+                        <div class="block-input-label_txt block-input-label">
+                            <label>Название</label>
+                            <input type="text">
+                        </div>
+                        <div class="block-input-label block-input-label_sel">
+                            <label>Группа шаблонов</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>Группа шаблонов 1</option>
+                                    <option>Группа шаблонов 2</option>
+                                    <option>Группа шаблонов 3</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="block-input-label block-input-label_sel">
+                            <label>Шаблон</label>
+                            <div class="block-select">
+                                <div class="icon-select"></div>
+                                <select class="gray-s">
+                                    <option>Шаблон 1</option>
+                                    <option>Шаблон 2</option>
+                                    <option>Шаблон 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container-task-map">
+                    <div class="block-task-map">
+                        <div class="container-task-info">
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Объекты
+                                    </div>
+                                    <div class="block-check-txt float-r">
+                                        <input type="checkbox">
+                                        <span class="checkbox-custom"></span>
+                                        <label>Создать подзадачи на каждый объект</label>
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_address display-bottom">
+                                        <div class="block-input-label block-input-label_address display-bottom">
+                                            <label>Адрес</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="block-bnt-grey btn-add-object display-bottom">
+                                            + Добавить объект
+                                        </div>
+                                    </div>
+                                    <div class="container-enter_list display-bottom">
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Выбрать из списка
+                                        </div>
+                                    </div>
+                                    <div class="container-address-info">
+                                        <div class="container-address-info_list">
+                                            <div class="block-address-info_title">
+                                                Обучающий центр, Корпус 1 с длинным названием в несколько строк
+                                            </div>
+                                            <div class="block-address-info_txt">
+                                                Российская Федерация, Новосибирская область, г. Бердск, Территория, изъятая из земель подсобного хозяйства Всесоюзного центрального совета профессиональных союзов, для организации крестьянского хозяйства, дом 17
+                                            </div>
+                                            <div class="block-remove-address-info btnRemoveInfo"></div>
+                                        </div>
+                                        <div class="container-address-info_list">
+                                            <div class="block-address-info_title">
+                                                Обучающий центр, Корпус 3
+                                            </div>
+                                            <div class="block-address-info_txt">
+                                                Речная 16, Греково, Ростовская обл. Россия
+                                            </div>
+                                            <div class="block-remove-address-info btnRemoveInfo"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Исполнители
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_list">
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Выбрать из списка
+                                        </div>
+                                    </div>
+
+                                    <div class="container-executor-info">
+                                        <div class="container-executor-info_list">
+                                            <div class="block-executor-name">Анастасия Бровкина</div>
+                                            <div class="block-executor-position">Специалист</div>
+                                            <div class="block-executor-group">Сервисные инженеры, ОХРСВ</div>
+                                            <div class="block-remove-executor btnRemoveExecutor"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Сроки
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="block-input-label w-210 display-middle">
+                                        <label>Тип</label>
+                                        <div class="block-input-label">
+                                            <div class="block-input-label_radio display-middle">
+                                                <input type="radio" name="check-type" class="block-radio" checked>
+                                                <label>Обычная</label>
+                                            </div>
+                                            <div class="block-input-label_radio display-middle">
+                                                <input type="radio" name="check-type" class="block-radio">
+                                                <label>Срочная</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle block-data-time">
+                                        <label>Дата начала</label>
+                                        <div class="block-data">
+                                            <i class="icon-cal"></i>
+                                            Дата
+                                        </div>
+                                        <div class="block-time">
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle block-data-period">
+                                        <label>Срок исполнения</label>
+                                        <div class="block-data_period">
+                                            <input type="text">
+                                        </div>
+                                        <div class="block-list_period">
+                                            <div class="icon-select"></div>
+                                            <select>
+                                                <option>Часов</option>
+                                                <option>Минут</option>
+                                                <option>Дней</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-input-label display-middle w-24">
+                                        <label>Повторение</label>
+                                        <div class="block-bnt-grey btn-add-list">
+                                            + Изменить повторение
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Описание задачи
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="block-textarea">
+                                        <textarea></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="block-add-object">
+                                <div class="container-title">
+                                    <div class="block-title float-l">
+                                        Файлы по задаче
+                                    </div>
+                                </div>
+                                <div class="container-enter">
+                                    <div class="container-enter_list">
+                                        <div class="block-bnt-grey btn-add-list display-middle">
+                                            + Прикрепить файл
+                                        </div>
+                                        <div class="block-file-info display-middle">
+                                            <div class="btn-close"></div>
+                                            <div class="block-file-info_txt">
+                                                Перечень необходимых в деле документов .txt (2.3 MB)
+                                            </div>
+                                        </div>
+                                        <div class="block-file-info display-middle">
+                                            <div class="btn-close"></div>
+                                            <div class="block-file-info_txt">
+                                                Большой перечень крайне необходимых для производства…txt (2.3 MB)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="container-map-task">
+                            <div class="block-map"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-btn-bottom">
+            <div class="block-btn-bottom_check float-l">
+                <div class="block-check-txt">
+                    <input type="checkbox">
+                    <span class="checkbox-custom"></span>
+                    <label>Строгий порядок выполнения</label>
+                </div>
+                <div class="block-check-txt">
+                    <input type="checkbox">
+                    <span class="checkbox-custom"></span>
+                    <label>Добавить в шаблоны</label>
+                </div>
+            </div>
+            <div class="block-btn-bottom_btn float-r">
+                <a href="#" class="block-bnt-grey display-top">
+                    + Добавить подзадачу
+                </a>
+                <div class="block-bnt-blue display-top">
+                    Сохранить задачу
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
