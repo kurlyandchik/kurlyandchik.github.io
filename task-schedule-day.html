@@ -108,6 +108,9 @@
                         <a href="#">Оповещения</a>
                     </li>
                 </ul>
+                <div class="block-additional btnAdditional">
+                    <div class="block-additional_icon"></div>
+                </div>
             </div>
         </div>
         <div class="menu-popup-content">
@@ -774,7 +777,7 @@
                     </div>
                 </div>
                 <div class="block-btn-bottom_btn float-r">
-                    <a href="#addtaskdop" class="block-bnt-grey display-top btnPopup" data-width-popup="1315">
+                    <a href="#addtaskdop" class="block-bnt-grey display-top btnPopup" data-width-popup="1315" data-map="maps-tasks">
                         <span class="icon">
                             <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M5 5V1a1 1 0 0 1 2 0v4h4a1 1 0 0 1 0 2H7v4a1 1 0 0 1-2 0V7H1a1 1 0 1 1 0-2h4z" id="a12121212"/></defs><use fill="#8E9FB6" xlink:href="#a12121212" fill-rule="evenodd"/></svg>
                         </span>
@@ -1714,7 +1717,7 @@
                                 <label>Шаблон</label>
                                 <div class="block-select">
                                     <div class="icon-select"></div>
-                                    <select>
+                                    <select class="gray-s">
                                         <option>Шаблон 1</option>
                                         <option>Шаблон 2</option>
                                         <option>Шаблон 3</option>
@@ -1784,8 +1787,11 @@
                                     </div>
                                     <div class="container-enter">
                                         <div class="container-enter_list">
-                                            <div class="block-bnt-grey btn-add-list">
+                                            <div class="block-bnt-grey btn-add-list mar-r-4">
                                                 + Выбрать из списка
+                                            </div>
+                                            <div class="block-bnt-grey btn-add-list mar-r-4">
+                                                + Экспортировать из задачи
                                             </div>
                                         </div>
     
@@ -1898,7 +1904,7 @@
     
                             </div>
                             <div class="container-map-task">
-                                <div class="block-map"></div>
+                                <div id="mapsTasks" class="block-map map-w"></div>
                             </div>
                         </div>
                     </div>
@@ -2237,12 +2243,12 @@
             <div class="container-three-block">
                 <div class="block-input-label">
                     <label>Исполнитель</label>
-                    <div class="block-bnt-grey btn-add-list">
+                    <a href="#addexecutor" class="block-bnt-grey btn-add-list btnPopup" data-width-popup="600">
                         <span class="icon">
                             <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M5 5V1a1 1 0 0 1 2 0v4h4a1 1 0 0 1 0 2H7v4a1 1 0 0 1-2 0V7H1a1 1 0 1 1 0-2h4z" id="a12121212"></path></defs><use fill="#8E9FB6" xlink:href="#a12121212" fill-rule="evenodd"></use></svg>
                         </span>
                         Добавить исполнителя
-                    </div>
+                    </a>
                 </div>
     
                 <div class="block-input-label">
